@@ -63,4 +63,4 @@ This extension does not collect any personal data. All preferences are stored lo
 
 ## Support
 
-For issues or feature requests, please [open an issue](https://github.com/kochkonbaev/Cookie-Consent.git/issues).
+For issues or feature requests, please [open an issue](https://github.com/kochkonbaev/Cookie-Consent/issues).
