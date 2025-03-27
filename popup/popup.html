@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cookies Consent Checker</title>
+  <link rel="stylesheet" href="popup.css">
+  <link rel="stylesheet" href="radio_button.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <h1>Cookies Consent Checker</h1>
+
+      <div class="hidden-toggles">
+        <input name="consent" value="accept" type="radio" id="accept" class="hidden-toggles__input">
+        <label for="accept" class="hidden-toggles__label" data-tooltip="This switch will always click accept cookies for you.">Accept</label>
+
+        <input name="consent" value="ask" type="radio" id="ask" class="hidden-toggles__input" checked>
+        <label for="ask" class="hidden-toggles__label" data-tooltip="This switch will not click on cookies for you, you need to accept or reject cookies yourself.">Ask</label>
+
+        <input name="consent" value="decline" type="radio" id="decline" class="hidden-toggles__input">
+        <label for="decline" class="hidden-toggles__label" data-tooltip="This switch will always click reject cookies for you.">Decline</label>
+      </div>
+    </div>
+
+    <hr>
+
+    <!-- Информация о куках -->
+    <div class="cookies-info" id="cookies"></div>
+
+    <hr>
+
+    <div id="related_links">
+      <h2>Find out more about</h2>
+      <ul>
+        <li><a href="https://gdpr-info.eu/" title="General Data Protection Regulation (GDPR)" target="_blank">What is GDPR?</a></li>
+        <li><a href="https://www.kaspersky.com/resource-center/definitions/cookies" title="What are Cookies? - kaspersky" target="_blank">What are Cookies?</a></li>
+        <li><a href="https://www.edps.europa.eu/sites/default/files/publication/18-12-14_edps_guidelines_data_breach_en.pdf" title="Guidelines on Personal Data Breach Notification" target="_blank">Personal Data Breach Notification</a></li>
+      </ul>
+    </div>
+
+    <hr>
+
+    <!-- Кнопки управления -->
+    <div class="buttons">
+      <button id="disable-extension"></button>
+      <button id="report" class="icon-button" data-tooltip="Report">
+        <i class="fa-solid fa-bug"></i>
+      </button>
+      <button id="clear-cookies" class="icon-button" data-tooltip="Clear cookies">
+        <i class="fa-solid fa-trash"></i>
+      </button>
+      <button id="settings" class="icon-button" data-tooltip="Settings">
+        <i class="fas fa-cog"></i>
+      </button>
+    </div>
+  </div>
+
+  <script src="popup.js"></script>
+</body>
+</html>

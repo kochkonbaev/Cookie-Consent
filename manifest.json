@@ -1,0 +1,32 @@
+{
+  "name": "Cookies Consent",
+  "description": "Detects cookie consent pop-ups and checks if they comply with GDPR.",
+  "manifest_version": 3,
+  "version": "1.0",
+  "host_permissions": ["*://*/*"],
+  "permissions": ["contentSettings", "cookies", "scripting", "activeTab", "storage", "notifications"],
+
+  "icons": {
+    "16": "icons/icon16.png",
+    "48": "icons/icon48.png",
+    "128": "icons/icon128.png"
+  },
+
+  "action": {
+    "default_popup": "popup/popup.html",
+    "default_icon": {
+      "16": "icons/icon16.png",
+      "48": "icons/icon48.png",
+      "128": "icons/icon128.png"
+    }
+  },
+
+  "background": {
+    "service_worker": "background.js",
+    "type": "module"
+  },
+  "options_ui": {
+    "page": "popup/option/option.html",
+    "open_in_tab": true
+  }
+}

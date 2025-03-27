@@ -1,0 +1,16 @@
+{
+  "essentialCookiesKeywords": [
+    "csrftoken", "exp_usercentrics", "uid", "currency_code", "browserTimezone",
+    "exp_usercentrics_web_no_x_banner","CriticalCSS", ".AspNetCore.Culture", "ALWCS",
+    "CBARIH", "_cfuvid", "sessionid", "PHPSESSID", "CZUEU_CONSENT2", "COOKIECONSENTI", "MoodleSession", "MOODLEID1_",
+    "UISAuth"
+  ],
+  "optionalCookieKeywords": [
+    "_ga", "_gid", "_fbp", "_gcl", "_uet", "_ttp", "__hstc", "hubspotutk", "_hj", "_cl",
+    "_ga_BQH4D3BLSB", "__hssc", "__hssrc", "_uetsid", "_uetvid", "_tt_enable_cookie",
+    "_hjSessionUser_641144", "_hjSession_641144", "_hjHasCachedUserAttributes", "_clck",
+    "_clsk", "pv_count", "uid", "cached_homepage", "m_source", "m_source_landing",
+    "m_source_details", "is_source_set", "source_page", "landing_page", "visit_time",
+    "_gcl_au", "_ga_Y02WXWM63K", "lux_uid", "udid"
+  ]
+}

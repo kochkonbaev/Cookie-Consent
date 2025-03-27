@@ -1,0 +1,98 @@
+:root {
+  --accent: #007ECC;
+  --accent-2: #EC2F4B;
+  --text: #003f66;
+  --text-hover: var(--accent);
+  --text-active: #FFFFFF;
+  --border-width: 0.125em;
+}
+
+.hidden-toggles {
+  position: relative;
+  border-radius: 999em;
+  height: 2.75em;
+  width: 20em;
+  display: flex;
+  flex-direction: row;
+}
+
+.hidden-toggles > * {
+  flex: 0 0 33.33%;
+}
+.hidden-toggles:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  border: var(--border-width) solid var(--accent);
+  border-radius: 999em;
+  pointer-events: none;
+}
+
+.hidden-toggles__input {
+  display: none;
+}
+
+.hidden-toggles__input:checked + .hidden-toggles__label {
+  background-color: var(--accent);
+  color: var(--text-active);
+}
+
+.hidden-toggles__input:checked + .hidden-toggles__label:before {
+  opacity: 1;
+}
+
+.hidden-toggles__label {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  position: relative;
+  cursor: pointer;
+  transition: all 0.2s ease-out;
+  color: var(--text);
+  border-radius: 999em;
+}
+
+.hidden-toggles__label:hover {
+  color: var(--text-hover);
+}
+
+.hidden-toggles__label::after {
+  content: attr(data-tooltip);
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: var(--accent);
+  color: var(--text-active);
+  padding: 5px 10px;
+  margin-top: 10px;
+  border-radius: 999em;
+  font-size: 12px;
+  white-space: nowrap;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s ease, visibility 0.3s ease;
+  pointer-events: none;
+}
+
+.hidden-toggles__label::before {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  border: 5px solid transparent;
+  border-bottom-color: var(--accent);
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s;
+}
+
+.hidden-toggles__label:hover::after,
+.hidden-toggles__label:hover::before {
+  opacity: 1;
+  visibility: visible;
+}

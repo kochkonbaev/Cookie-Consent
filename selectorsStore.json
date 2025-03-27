@@ -1,0 +1,23 @@
+{
+  "example.com": {
+    "accept": "put here button selector for accept",
+    "decline": "put here button selector for decline"
+  },
+
+  "czu.cz": {
+    "accept": "#webcore-widget-cookieOptIn > div.row > div > button.btn.btn-success",
+    "decline": "#webcore-widget-cookieOptIn > div.row > div > button:nth-child(2)"
+  },
+  "quinncompany.com": {
+    "accept": "#CybotCookiebotDialogBodyButtonAccept",
+    "decline": "#CybotCookiebotDialogBodyButtonDecline"
+  },
+  "preply.com": {
+    "accept": "#accept",
+    "decline": "#deny"
+  },
+  "bathandbodyworks.cz": {
+    "accept": "#CybotCookiebotDialogBodyLevelButtonLevelOptinAllowAll",
+    "decline": "#CybotCookiebotDialogBodyButtonDecline"
+  }
+}
